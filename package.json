@@ -1,0 +1,24 @@
+{
+   "name": "natours",
+   "version": "1.0.0",
+   "description": "Landing page for natours",
+   "homepage": "https://github.com/Abdalrahman-Amin/natours-website#readme",
+   "bugs": {
+      "url": "https://github.com/Abdalrahman-Amin/natours-website/issues"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Abdalrahman-Amin/natours-website.git"
+   },
+   "license": "ISC",
+   "author": "Abdalrhman Amin",
+   "type": "commonjs",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "sass:watch": "sass --watch sass/main.scss css/style.css"
+   },
+   "devDependencies": {
+      "sass": "^1.85.1"
+   }
+}
