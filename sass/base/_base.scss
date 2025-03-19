@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit; /*box-sizing by itself is not inherited*/
+}
+
+html {
+   /* font-size: 10px; this is the root font size and 1rem is 10px now  , it is a bad practice to specify this value in px cause this overwrite browser font size it should be in percentage 62.5% of 16 px is 10px */
+   font-size: 62.5%;
+}
+
+body {
+   box-sizing: border-box;
+}
