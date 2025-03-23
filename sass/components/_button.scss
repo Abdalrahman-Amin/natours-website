@@ -8,7 +8,7 @@
       display: inline-block;
       transition: all 0.2s;
       position: relative;
-      font-size: 1.6rem;
+      font-size: $default-font-size;
    }
 
    &:hover {
@@ -51,5 +51,30 @@
    &--animated {
       animation: moveInBottom 0.5s ease-out 0.75s;
       animation-fill-mode: backwards; /*The beginning property value (as defined in the first @keyframes at-rule) is applied before the animation is displayed, during the period defined by 'animation-delay'.*/
+   }
+}
+
+.btn-text {
+   &:link,
+   &:visited {
+      color: $color-primary;
+      display: inline-block;
+      text-decoration: none;
+      border-bottom: 0.1rem solid $color-primary;
+      padding: 0.3rem;
+      font-size: $default-font-size;
+      transition: all 0.2s;
+   }
+
+   &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+      transform: translateY(-0.2rem);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+   }
+
+   &:active {
+      transform: translateY(0);
+      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
    }
 }
